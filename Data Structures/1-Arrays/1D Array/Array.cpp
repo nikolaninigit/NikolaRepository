@@ -1,9 +1,6 @@
 // EXAMPLE OF METHODS DEFINED IN Array.h
-
 #include "Array.h"
 #include <iostream.h>
-
-
 void main()
 {
 	Array<int> obj(5,5);
