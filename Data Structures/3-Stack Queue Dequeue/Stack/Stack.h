@@ -21,5 +21,5 @@ class Stack
 	}; 
 
 	virtual bool isEmpty() { return true; }; // checking if stack is empty
-	virtual int brojElemenata() {return 0 ;} ; // returning number of elements from the stack
+	virtual int numOfElements() {return 0 ;} ; // returning number of elements from the stack
 };
