@@ -52,7 +52,6 @@ public:
 	Array& operator=(Array& a);
 	T operator[](int index);
 	void bubble();
-	//Array<T> izvod(int stepen);
 	void izvod(Array<T>& a,int stepen);
 };
 
