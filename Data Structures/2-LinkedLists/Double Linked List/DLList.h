@@ -1,4 +1,4 @@
-// Class for double linked list
+// Class for Doubly linked list
 #include<iostream.h>
 #include "DLLNode.h"
 

@@ -1,4 +1,4 @@
-// Node in Single Linked List represented as a Polynom
+// Node in Singly Linked List represented as a Polynom
 template<class t>
 class SLLNode
 {

@@ -1,4 +1,4 @@
-// Class for Single Linked List
+// Class for Singly Linked List
 #include<iostream.h>
 #include "SLLNode.h"
 

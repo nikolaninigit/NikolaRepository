@@ -1,4 +1,4 @@
-// Node class for Double Linked List
+// Node class for Doubly Linked List
 template<class t>
 class DLLNode
 {

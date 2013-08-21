@@ -38,7 +38,7 @@ void main()
 	//	cout<<sobj.treeMomentRecursive(0)<<endl;
 
     // example - NUmber of different Nodes in Binary Tree
-    // cout<<sobj.brojRazlCvoroveStaticki()<<endl;
+    // cout<<sobj.brojRazlargumentNodeoroveStaticki()<<endl;
 
      // example - Inorder Tree tranversal
      //	sobj.inorder(0);

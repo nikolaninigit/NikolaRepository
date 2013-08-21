@@ -1,4 +1,4 @@
-// Main class for testing Methods of Single Linked List
+// Main class for testing Methods of Singly Linked List
 #include<iostream.h>
 #include "SLList.h"
 

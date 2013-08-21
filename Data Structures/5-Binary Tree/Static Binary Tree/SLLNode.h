@@ -1,4 +1,4 @@
-// Class Node of Single linked List
+// Class Node of Singly linked List
 template<class t>
 class SLLNode
 {

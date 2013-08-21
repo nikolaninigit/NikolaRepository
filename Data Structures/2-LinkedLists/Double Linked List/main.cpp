@@ -1,4 +1,4 @@
-// Main class for trying out methods to work with Double Linked List
+// Main class for trying out methods to work with Doubly Linked List
 #include<iostream.h>
 #include "DLList.h"
 

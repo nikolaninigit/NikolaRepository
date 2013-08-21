@@ -1,4 +1,4 @@
-// Class for Single Linked List
+// Class for Singly Linked List
 #include<iostream.h>
 #include "SLLNode.h"
 
@@ -38,14 +38,14 @@ class SLList
 	  void addToTail(t elem); // method for adding new element to the end of the list
 	  t deleteFromTail(); // method for deleting elements from the end of the list
       void deleteElem(t el); // method that deletes element 'el' from the list
-	  void insertNode( SLLNode<t> cv ); // method for inserting new node into sorted list
+	  void insertNode( SLLNode<t> argumentNode ); // method for inserting new node into sorted list
 	  void bubbleSort(); // method for sorting list as bubble sort algorithm
 	  void removeNegatives(SLList<t> *rhs ); // method for getting nodes with negative 'info' values and puts them into second list
 
       t getHeadEl() // method for returning head element from the list
 	  {
          if( head == NULL )
-			 throw "Izuzetak getHeadEl() - LISTA JE PRAZNA";
+			 throw "Exception getHeadEl() - LISTA JE PRAZNA";
 	      
 		 return  head->info;
 	  }
@@ -60,10 +60,10 @@ class SLList
 			  tmp = tmp->next;
 
 		  if (tmp == NULL)
-			  throw "Izuzetak 1 - getNextEl() -  NEMA ELEMENTA U LISTI";
+			  throw "EXCEPTION 1 - getNextEl() -  NO ELEMENTS IN THE LIST";
 
 		  if( tmp->next == NULL )
-			  throw "Izuzetak 2 - getNextEl() -  NEMA ELEMENTA U LISTI";
+			  throw "EXCEPTION 2 - getNextEl() -  NO ELEMENTS IN THE LIST";
 	  
 	       return ( tmp->next->info );
 	  }
@@ -84,19 +84,19 @@ class SLList
 
 	  bool ifElementIsInList( t el ) // function that checks if some element is in the list
 	  {
-		  bool postoji = false;
+		  bool exists = false;
           SLLNode<t> * r ;
 		  r = head;
 
 		  while ( r != NULL )
 		  {
 			  if ( r->isEqual( el ) == true )
-				  postoji = true;
+				  exists = true;
 
 			  r= r->next;
 		  }
 
-		  return postoji;
+		  return exists;
 	  }
 };
 
@@ -115,7 +115,7 @@ class SLList
 	void SLList<t>::printAll()
 	{
 		if( head == NULL )
-			  throw "IZUZETAK ZA printAll() - LISTA JE PRAZNA";
+			  throw "EXCEPTION printAll() - LIST IS EMPTY";
 
 		SLLNode<t> *tmp = head;
 
@@ -130,7 +130,7 @@ class SLList
 	t SLList<t>::deleteFromHead()
 	{
 		if( head == NULL )
-			 throw "IZUZETAK deleteFromHead() - LISTA JE PRAZNA";
+			 throw "EXCEPTION deleteFromHead() - LIST IS EMPTY";
 
 		SLLNode<t> *pom;
 		t elem = head->info;
@@ -175,7 +175,7 @@ class SLList
 	t SLList<t>::deleteFromTail()
 	{
 		if( head == NULL )
-			throw "IZUZETAK deleteFromTail() - LISTA JE PRAZNA";
+			throw "Exception deleteFromTail() - LIST IS EMPTY";
 
 		t elem = tail->info;
 
@@ -209,7 +209,7 @@ class SLList
 	void SLList<t>::deleteElem(t elem)
 	{
 		if ( head == NULL)
-			   throw "LISTA JE PRAZNA - IZUZETAK U deleteElem()";
+			   throw "EXCEPTION  deleteElem() - LIST IS EMPTY";
 
 		SLLNode<t> * prev , *sl;
 
@@ -241,41 +241,41 @@ class SLList
 	}
 
 	template<class t> // method for inserting new node into sorted list
-	void SLList<t>::insertNode(SLLNode<t> cv)
+	void SLList<t>::insertNode(SLLNode<t> argumentNode)
 	{
 		SLLNode<t> *prev;
-		SLLNode<t> *sled;
+		SLLNode<t> *next;
 
-		SLLNode<t> *novi;
+		SLLNode<t> *newNode;
 
 		// if list is empty
 		if ( head == NULL )
-			 addToHead( cv.info );
+			 addToHead( argumentNode.info );
 		else
 			// if it is greather than first element
-			if( cv.info >= head->info )
-				addToHead(cv.info);
+			if( argumentNode.info >= head->info )
+				addToHead(argumentNode.info);
 			else
 				// if is less than last element
-				if ( tail->info >= cv.info )
-					addToTail(cv.info);
+				if ( tail->info >= argumentNode.info )
+					addToTail(argumentNode.info);
 		 // until I get to element
 		else
 		{
 			prev = head;
-			sled = head->next;
+			next = head->next;
 
-			while( sled->info >= cv.info )
+			while( next->info >= argumentNode.info )
 			{
-				sled = sled->next;
+				next = next->next;
 				prev = prev->next; 
 			}
 			// find where to insert new element
-			if( sled != NULL )
+			if( next != NULL )
 			{
-			  novi = new SLLNode<t>(cv.info);
-			  novi->next = sled;
-			  prev->next = novi;
+			  newNode = new SLLNode<t>(argumentNode.info);
+			  newNode->next = next;
+			  prev->next = newNode;
          
 			}
 		}
@@ -290,7 +290,7 @@ class SLList
 
 		// if list is empty
 		if( head == NULL )
-			throw "IZUZETAK - bubbleSort() - LISTA JE PRAZNA";
+			throw "Exception - bubbleSort() - LISTA JE PRAZNA";
 
 		// if list has two elements
 		 if( head->next == tail )
@@ -336,7 +336,7 @@ class SLList
 		SLLNode<t> *pom;
 
 		SLLNode<t> *pred;
-		SLLNode<t> *sled;
+		SLLNode<t> *next;
 
 		// if list has only 1 element
 		if( head->next == tail)
@@ -369,22 +369,22 @@ class SLList
 		else
 		{  // if list has more than two elements
 			pred = head;
-			sled = head->next;
+			next = head->next;
 
-			while( sled != NULL )
+			while( next != NULL )
 			{
 			   if( pred->info <= 0 )
 			   {
 				   rhs->addToHead(pred->info);
 				   pom = pred;
-				   sled= sled->next;
+				   next= next->next;
 				   pred=pred->next;
 				   pom->next = NULL;
 			   }
 			   else
 			   {  
 				 pred = pred->next;
-				 sled = sled->next;
+				 next = next->next;
 			   }
 			}
 		}

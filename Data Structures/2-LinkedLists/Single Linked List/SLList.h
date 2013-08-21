@@ -1,4 +1,4 @@
-// Class for representing Single Linked List
+// Class for representing Singly Linked List
 #include<iostream.h>
 #include "SLLNode.h"
 template<class t>
@@ -32,8 +32,8 @@ class SLList
         
 	   void printAll(); // Method for printing
       
-	   t suma(); // Method for calculating sum of all elements of the Single Linked List
-	   void insertionSort(); // Method to sort Single Linked List - Insertion Sort
+	   t suma(); // Method for calculating sum of all elements of the Singly Linked List
+	   void insertionSort(); // Method to sort Singly Linked List - Insertion Sort
 };
 
 // destructor
@@ -127,7 +127,7 @@ t SLList<t>::deleteFromTail()
    return el;
 }
 
-//Method for calculating sum of all elements of the Single Linked List
+//Method for calculating sum of all elements of the Singly Linked List
 template<class t>
 t SLList<t>::suma()
 {
@@ -141,7 +141,7 @@ t SLList<t>::suma()
    return s;
 }
 
-// Method to sort Single Linked List - Insertion Sort
+// Method to sort Singly Linked List - Insertion Sort
 template<class t>
 void SLList<t>::insertionSort()
 {

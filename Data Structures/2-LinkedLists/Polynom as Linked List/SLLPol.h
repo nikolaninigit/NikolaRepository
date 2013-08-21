@@ -1,4 +1,4 @@
-// Template class for representing Polynom as a Single Linked List
+// Template class for representing Polynom as a Singly Linked List
 #include<iostream.h>
 #include "SLLNode.h"
 template<class t>

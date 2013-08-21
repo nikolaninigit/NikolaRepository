@@ -1,4 +1,4 @@
-// Class Node of Single linked List
+// Class Node of Singly linked List
 template<class t>
 class SLLNode
 {
@@ -33,7 +33,7 @@ class SLLNode
 		   return info;
 	   }
 
-	   bool isEqual(t el) // method that checks if value is equal
+	   bool isEqual(t el) // method that checks if value 'el' is equal to node 'info' value
 	   {
 		  return  (el == info);
 	   }

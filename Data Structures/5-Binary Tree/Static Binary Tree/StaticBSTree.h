@@ -45,7 +45,7 @@ class StaticBSTree
 			}
 		}
 		else
-			throw "izuzetak insert() - NEMA MESTA VISE ZA UNOS ELEMENATA";
+			throw "Exception insert() - NEMA MESTA VISE ZA UNOS ELEMENATA";
 	}
 
 	void printArray() // method for ordinary printing of the array
@@ -53,7 +53,7 @@ class StaticBSTree
 		int i;
 
 		if ( numOfElements == 0 )
-			 throw "izuzetak printArray() - NEMA ELEMENATA U STABLU";
+			 throw "Exception printArray() - NEMA ELEMENATA U STABLU";
 		for( i=0; i<maxSize; i++ )
 			//if( tree[i] != -1 )
 				cout<<tree[i]<<" ";
