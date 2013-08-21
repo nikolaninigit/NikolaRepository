@@ -48,11 +48,11 @@ public:
 	{
 		return length;
 	}
-	void setLength(int newLen);
-	Array& operator=(Array& a);
-	T operator[](int index);
-	void bubble();
-	void izvod(Array<T>& a,int stepen);
+	void setLength(int newLen); // method for setting length of the Array
+	Array& operator=(Array& a); // operator =
+	T operator[](int index); // operator []
+	void bubble(); // bubble sort algotirhm
+	void nThDerivative(Array<T>& a,int n); // Method for calculating Nth derivative of polynom represented as an array
 };
 
 // IMPLEMENTATION OF METHODS
@@ -129,9 +129,9 @@ void Array<T>::bubble()  // bubble sort
 
 }
 template <class T>
-void Array<T>::izvod(Array<T>& a,int stepen)  //  first derivate of polynoim where 'a[i]' is coeficiente and 'i' is 'degree'
+void Array<T>::nThDerivative(Array<T>& a,int n)  //  first derivative of polynoim where 'a[i]' is coeficiente and 'i' is 'degree'
 {
-	for(int j=0;j<stepen;j++)
+	for(int j=0;j<n;j++)
 	{
 		int len=length-1;
 		for(int i=len;i>0;i--)
@@ -140,6 +140,5 @@ void Array<T>::izvod(Array<T>& a,int stepen)  //  first derivate of polynoim whe
 			a.data[i]=data[i];
 		}
 		a.data[0]=0;
-	}
-		
+	}	
 }

@@ -25,9 +25,9 @@ void main()
 	obj1.bubble(); // bubble sort
 	obj1.print(); // printing array
 	cout<<obj.getBase()<<endl;
-	//obj.setBase(10);
+	obj.setBase(10);
 	cout<<obj.getBase()<<endl;
-	cout<<"niz je velicine "<<obj.getLength()<<endl;
+	cout<<"Array has size "<<obj.getLength()<<endl;
 	
 	Array<int> obj2(6); // trying for the second array
 	obj2.insert(3,0);
@@ -36,16 +36,17 @@ void main()
 	obj2.insert(4,3);
 	obj2.insert(2,2);
 	
-	// trying out function for the first derivate
-	cout<<"polinom: ";
+	// trying out function for the first derivative
+	cout<<"Polynom: ";
 	obj2.print();
 	int stepen=2;
 	Array<int> obj3(6);
-	obj3.izvod(obj2,stepen);
-	cout<<stepen<<". izvod:";
+	obj3.nThDerivative(obj2,stepen);
+	cout<<stepen<<". nThDerivative:";
 	obj3.print();
+	
 	/*Array<int> obj4(6);
-	obj4=obj2.izvod(1);
+	obj4=obj2.nThDerivative(1);
 	obj4.print();*/
 	}
 	catch(char* e)
