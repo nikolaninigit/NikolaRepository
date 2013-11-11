@@ -31,12 +31,12 @@ class SLLNode
    	// method for getting info value
    	t print()
    	{
-  	 	return info;
+  	 return info;
    	}
 
 	// method for checking if argument is equal to info 'value'
    	bool isEqual(t el)
    	{
-   		return (info == el);
+   	return (info == el);
    	}
 };
