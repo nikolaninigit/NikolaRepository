@@ -3,7 +3,7 @@ template<class t>
 class SLLNode
 {
      public:
-   	t exp; // Node exponent
+     t exp; // Node exponent
 	t koef; // Node Value
 	SLLNode<t> *next; // Pointer to next Node
 	
