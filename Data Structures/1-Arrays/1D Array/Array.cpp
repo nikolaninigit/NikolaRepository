@@ -6,11 +6,11 @@ void main()
 	Array<int> obj(5,5);
 	try
 	{ // inserting elements into array
-		obj.insert(3,9);
-		obj.insert(2,8);
-		obj.insert(1,7);
-		obj.insert(0,6);
-		obj.insert(-1,5);
+  	obj.insert(3,9);
+	obj.insert(2,8);
+	obj.insert(1,7);
+	obj.insert(0,6);
+	obj.insert(-1,5);
 	
     // creating another object and trying out functions	
 	Array<int> obj1(10,5);
