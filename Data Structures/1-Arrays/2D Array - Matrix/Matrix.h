@@ -4,7 +4,7 @@ template<class t>
 class Matr
 {
 	private:
-		int vr; // number of rows
+	   	int vr; // number of rows
 		int kol; // number of columns
 		t **m; // 2d pointer
     	public: // constructors and methods
