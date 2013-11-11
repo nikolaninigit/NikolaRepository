@@ -26,7 +26,7 @@ class SLLNode
    	// destructor
    	~SLLNode()
    	{
-	}
+	  }
 
    	// method for getting info value
    	t print()
