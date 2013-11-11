@@ -7,16 +7,16 @@ class Stack
 
    virtual void push( t elem )
    {
-     throw "IZUZETAK-POZIV VIRTUELNE";
+     throw "EXCEPTION-push call";
    }
 
    virtual t pop()
    {
-      throw "VIRTUAL POP POZIV FUNKCIJE";
+      throw "EXCEPTION-pop call";
    }
 
    virtual t getTop()
    {
-      throw "VIRTUAL getTop() FUNCTION CALLED";
+      throw "EXCEPTION-VIRTUAL getTop() FUNCTION CALLED";
    }
 };
