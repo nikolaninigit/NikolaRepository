@@ -4,7 +4,7 @@ class DLLNode
 {
 	public:
          	t info;
-     	DLLNode<t> *prev, *next;
+     	  DLLNode<t> *prev, *next;
 
 	// default constructor
 	DLLNode()
