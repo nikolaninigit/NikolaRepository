@@ -15,5 +15,5 @@ class ChainedScatterObject : public ScatterObject<t , r>
 		}
 		ChainedScatterObject(t key) : ScatterObject<t , r>(key) { next = -1; }
 		ChainedScatterObject(t key , r * rec) : ScatterObject<t , r>( key , rec ) { next = -1; }
-        ChainedScatterObject( t key , r * rec , int n ) : ScatterObject<t , r>( key , rec ) { next = n; }
+        	ChainedScatterObject( t key , r * rec , int n ) : ScatterObject<t , r>( key , rec ) { next = n; }
 };
