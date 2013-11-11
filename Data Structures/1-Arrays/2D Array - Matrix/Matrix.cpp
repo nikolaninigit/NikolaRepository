@@ -4,22 +4,22 @@
 void main()
 {
 	Matr<double> m(3,4);
-	Matr<double> jed;
-	double niz[] = {1,2,3,4,5,6,7,8,9,10};
-	double niz1[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
+	Matr<double> m1;
+	double array[] = {1,2,3,4,5,6,7,8,9,10};
+	double array1[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
 
-	m.cisti(); // set to all '0'
+	m.clear(); // set to all '0'
 	m.print();
 
-	 cout<<endl<<"PRIMER ZA OPERATOR ="<<endl;
-
-	 jed = m;
-	 jed.print();
-	 cout<<endl<<"nakon primene metode setAt()"<<endl;
-	 jed.setAt(0,2 , 4);
-	 jed.print();
-
-	 cout<<endl<<"Nakon smestanja po vrstama"<<endl;
-	 jed.setRow(niz1 , 17);
-	 jed.print();
+	cout<<endl<<"EXAMPLE FOR OPERATOR ="<<endl;
+	
+	m1 = m;
+	m1.print();
+	cout<<endl<<"After method setAt()"<<endl;
+	m1.setAt(0,2 , 4);
+	m1.print();
+	
+	cout<<endl<<"After inserting by rows"<<endl;
+	m1.setRow(array1 , 17);
+	m1.print();
 }
