@@ -7,17 +7,17 @@ class Stack
 	
 	virtual t getTop()    // virtual function for getting from the top
 	{
-		throw "IZUZETAK - POZIV VIRTUELNE FUNKCIJE KLASE STACK";
+		throw "exception - call virtuAl function";
 	};
 
     virtual void push( t elem ) // virtual function for adding elements 
 	{
-      throw "POZIV VIRTUELNE FUNKCIJE";
+      throw "exception-virtual function call";
 	};
 
     virtual t pop() // virtual function for getting elements
 	{
-		throw "IZUZETAK - pozov virtuelne funkcije";
+		throw "Exception-virtual function call";
 	}; 
 
 	virtual bool isEmpty() { return true; }; // checking if stack is empty
