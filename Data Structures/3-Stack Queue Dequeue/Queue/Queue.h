@@ -4,23 +4,23 @@ class Queue
 {
 	public:
 	
- 	virtual t getHead() // for taking elements from the start of the queue
+	virtual t getHead() // for taking elements from the start of the queue
 	{
-		throw "IZUZETAK U POZIVU VIRTUELNE FUNKCIJE";
+	throw "EXCEPTION - VIRTUAL FUNCTION CALL";
 	}; 
-      
+	
 	virtual void enqueue( t elem ) // for adding elelemnt to the queue
 	{
-		throw "IZUZETAK - VIRTUELNI POZIV"; 	  
+	throw "EXCEPTION - VIRTUAL FUNCTION CALL"; 	  
 	}; 
-
-  	virtual t dequeue() // for taking elements from  the end of the queue
+	
+	virtual t dequeue() // for taking elements from  the end of the queue
 	{
-       throw "IZUZETAK - VIRTUELNI POZIV";
+	throw "EXCEPTION - VIRTUAL FUNCTION CALL";
 	};
-
+	
 	virtual bool isEmpty() // checks if queue is empty
 	{
-      throw "POZIV VIRTUELNE FUNKCIJE";
+	throw "EXCEPTION - VIRTUAL FUNCTION CALL";
 	};
 };
