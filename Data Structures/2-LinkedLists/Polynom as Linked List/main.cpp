@@ -21,7 +21,7 @@ void main()
          	 obj.addToHead(5,3);
 		 
   
-         // for second list
+         	// for second list
 		 obj1.addToHead(0,2);
 		 obj1.addToHead(1,1);
          	 obj1.addToHead(3,3);
@@ -39,7 +39,7 @@ void main()
 		 cout<<endl;
      ////////////////////
 
-	    // adding two polynoms
+	    	// adding two polynoms
  		 cout<<endl<<"SUM LOOKS"<<endl;
 		 s = r->add(obj , obj1);
 	    	 s->print();
@@ -47,7 +47,7 @@ void main()
 	////////
 
 
-		// multiplying
+		 // multiplying
 		 cout<<endl<<"PRODUCT LOOKS"<<endl;
 		 r = r->mul(obj , obj1);
 		 r->print();
