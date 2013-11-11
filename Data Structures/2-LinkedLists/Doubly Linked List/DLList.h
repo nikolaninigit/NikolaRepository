@@ -10,13 +10,13 @@ class DLList
     
 	   DLList() // constructor 
 	   {
-		   head = NULL;
-		   tail = NULL;
+	       head = NULL;
+	       tail = NULL;
 	   }
    // function that checks if list is empty
 	   bool isEmpty()
 	   {
-          return ( head == NULL ); 
+               return ( head == NULL ); 
 	   }
 
 	   ~DLList();   // desctructor
@@ -30,12 +30,13 @@ class DLList
 	   // head
 	   DLLNode<t> * getHead()
 	   {
-		   return head;
+	       return head;
 	   }
-       // tail
+	   
+       	   // tail
 	   DLLNode<t> * getTail()
 	   {
-          return tail;
+               return tail;
 	   }
 
 };
@@ -136,17 +137,17 @@ class DLList
 	void DLList<t>::addToTail( t el )
 	{
 	   // is list is empty
-		if( head == NULL )
-		{
-	       head = new DLLNode<t>(el);
+	   if( head == NULL )
+	   {   
+	      head = new DLLNode<t>(el);
 	
-		   if ( tail == NULL )
-			   tail = head;
+	      if (tail == NULL)
+	          tail = head;
 		}
 		else
-		{ // if list has at least one element
-			tail->next = new DLLNode<t>(el , NULL , NULL );
-			tail->next->prev = tail;
-			tail = tail->next;
+		{  // if list has at least one element
+		   tail->next = new DLLNode<t>(el , NULL , NULL );
+		   tail->next->prev = tail;
+		   tail = tail->next;
 		}
 	}
