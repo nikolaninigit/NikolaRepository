@@ -5,8 +5,8 @@ void main()
 {
 	try{
 		
-		int nizDimenzija[3]={2,2,2};
-		MultiDimensionalArray<int> obj((int*)nizDimenzija,3,0);
+		int dimensionsArray[3]={2,2,2};
+		MultiDimensionalArray<int> obj((int*)dimensionsArray,3,0);
 		int ind[3]={0,1,0};
 		obj.setAt(2,(int*)ind,3);
 		int ind1[3]={0,1,1};
