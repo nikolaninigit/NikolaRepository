@@ -37,8 +37,8 @@ void main()
 	//  example - Tree moment - getting number of nodes in BInary TRee
 	//	cout<<sobj.treeMomentRecursive(0)<<endl;
 
-	    // example - NUmber of different Nodes in Binary Tree
-	    // cout<<sobj.brojRazlargumentNodeoroveStaticki()<<endl;
+	     // example - NUmber of different Nodes in Binary Tree
+	     // cout<<sobj.brojRazlargumentNodeoroveStaticki()<<endl;
 
 	     // example - Inorder Tree tranversal
 	     //	sobj.inorder(0);
@@ -47,13 +47,13 @@ void main()
 
 	     // example - Preorder Tree tranversal
 	     //	sobj.preorder(0);
-		 //	cout<<endl;
+	     //	cout<<endl;
 
 	 // example - breadth tranversal of Binary Tree
 	 // sobj.breadthTranversal();
 
 	 // Method for counting Leaves in Binary Tree 
-	 //	cout<<sobj.countLeaves()<<endl;
+	 // cout<<sobj.countLeaves()<<endl;
 
 	}
 	catch( char *izuz )
