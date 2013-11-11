@@ -25,11 +25,11 @@ void main()
 	/*
 		// example - for deleting Leaves
 		sobj.deleteLeaves();
-        sobj.printArray();
-    */
+        	sobj.printArray();
+    	*/
 		
 
-    /*
+    	/*
 		// example - counting Leaves in Binary Tree
 		cout<<sobj.numberOfLeavesRecursive(0)<<endl;
 	*/
@@ -37,17 +37,17 @@ void main()
 	//  example - Tree moment - getting number of nodes in BInary TRee
 	//	cout<<sobj.treeMomentRecursive(0)<<endl;
 
-    // example - NUmber of different Nodes in Binary Tree
-    // cout<<sobj.brojRazlargumentNodeoroveStaticki()<<endl;
+	    // example - NUmber of different Nodes in Binary Tree
+	    // cout<<sobj.brojRazlargumentNodeoroveStaticki()<<endl;
 
-     // example - Inorder Tree tranversal
-     //	sobj.inorder(0);
-     // cout<<endl;
+	     // example - Inorder Tree tranversal
+	     //	sobj.inorder(0);
+	     // cout<<endl;
 
 
-     // example - Preorder Tree tranversal
-     //	sobj.preorder(0);
-	 //	cout<<endl;
+	     // example - Preorder Tree tranversal
+	     //	sobj.preorder(0);
+		 //	cout<<endl;
 
 	 // example - breadth tranversal of Binary Tree
 	 // sobj.breadthTranversal();
