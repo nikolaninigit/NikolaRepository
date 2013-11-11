@@ -3,7 +3,7 @@ template<class t>
 class SLLNode
 {
    public:
-        t info; // info -> generaly Node value
+          t info; // info -> generaly Node value
    	SLLNode<t> *next; // pointer to next node
 
    public: // Methods
