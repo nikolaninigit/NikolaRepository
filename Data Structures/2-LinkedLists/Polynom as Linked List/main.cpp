@@ -6,7 +6,7 @@ void main()
 {
 	try
 	{
-         	 SLLPol<double> obj;
+                  SLLPol<double> obj;
 		 SLLPol<double> obj1;
 
 		 SLLPol<double>  *r = new SLLPol<double>;
