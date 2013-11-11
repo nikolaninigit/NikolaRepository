@@ -6,7 +6,7 @@ void main()
 {
 	try
 	{
-         SLLPol<double> obj;
+         	 SLLPol<double> obj;
 		 SLLPol<double> obj1;
 
 		 SLLPol<double>  *r = new SLLPol<double>;
@@ -18,13 +18,13 @@ void main()
 		 obj.addToHead(0,2);
 		 obj.addToHead(1,4);
 		 obj.addToHead(3,2);
-         obj.addToHead(5,3);
+         	 obj.addToHead(5,3);
 		 
   
          // for second list
 		 obj1.addToHead(0,2);
 		 obj1.addToHead(1,1);
-         obj1.addToHead(3,3);
+         	 obj1.addToHead(3,3);
 		 obj1.addToHead(4,2);
 		
 		 cout<<"FIRST POLYNOM LOOKS"<<endl;
@@ -41,9 +41,9 @@ void main()
 
 	    // adding two polynoms
  		 cout<<endl<<"SUM LOOKS"<<endl;
-		s = r->add(obj , obj1);
-	    s->print();
-	    cout<<endl;
+		 s = r->add(obj , obj1);
+	    	 s->print();
+	    	 cout<<endl;
 	////////
 
 
