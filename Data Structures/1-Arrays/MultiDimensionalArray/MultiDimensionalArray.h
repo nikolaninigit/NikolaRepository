@@ -14,7 +14,7 @@ private:
 public: /// METHODS AND CONSTRUCTORS  
 	MultiDimensionalArray(int* arg,int d, int b)
 	{
-		base=b;
+	   	base=b;
 		dimension=d;
 		dim=new int[dimension];
 		fac=new int[dimension];
@@ -26,37 +26,41 @@ public: /// METHODS AND CONSTRUCTORS
 			product=product*dim[i];
 		}
 		data=new T[product];
-		
 	}
-    // destructor 
+	
+    	// destructor 
 	~MultiDimensionalArray()
 	{
 	}
-    // Method to set element to certain position
+	
+    	// Method to set element to certain position
 	void setAt(T el, int* indices, int n)
 	{
 		data[getOffset(indices,n)]=el;
 	}
-    // Method for getting element from certain position
+    
+    	// Method for getting element from certain position
 	T getAt(int* indices, int n)
 	{
 		return (data[getOffset(indices,n)]);
 	}
-    // Get value of index based on "indices" vector
-	int getOffset(int* indices, int n)//n dimenzija
+	
+    	// Get value of index based on "indices" vector
+	int getOffset(int* indices, int n)//n дименсионс
 	{
 		if(n!= dimension)
-			throw "dimenzija van granica";
+			throw "dimensions out of bounds";
 		int offset=0;
 		for(int i=0;i<dimension;i++)
 		{
 			if((indices[i]<0) || (indices[i]>=dim[i]))
-				throw "index van granica";
+				throw "Index out of bounds";
 			offset+=fac[i]*indices[i];
 		}
 		return offset;
 	}
-    // Method for printing
+	
+    	// Method for printing
 	void print()
 	{
 		int product=1;
