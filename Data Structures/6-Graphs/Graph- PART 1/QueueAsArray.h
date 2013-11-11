@@ -36,14 +36,14 @@ class QueueAsArray
 		T getHead() // get value of element from the start but not remove it from the queue 
 		{
 			if(numOfElements==0)
-				throw "Queue is empty;";
+				throw "QUEUE is empty;";
 			return data[head];
 		}	
 		
 		void enqueue(T obj)
 		{
 			if(numOfElements==maxSize)
-				throw "Red je pun";
+				throw "QUEUE is full";
 			else
 			{
 				tail++;
@@ -60,7 +60,7 @@ class QueueAsArray
 		T dequeue()
 		{
 			if(numOfElements==0)
-				throw "Red je prazan";
+				throw "QUEUE IS EMPTY";
 			else
 			{
 				T result=data[head];
