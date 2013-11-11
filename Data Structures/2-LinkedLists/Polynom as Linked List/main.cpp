@@ -18,7 +18,7 @@ void main()
 		 obj.addToHead(0,2);
 		 obj.addToHead(1,4);
 		 obj.addToHead(3,2);
-         	 obj.addToHead(5,3);
+         	obj.addToHead(5,3);
 		 
   
          	// for second list
