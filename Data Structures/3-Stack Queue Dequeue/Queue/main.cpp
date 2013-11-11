@@ -22,5 +22,4 @@ void main()
 	{
       cout<<e<<endl;
 	}
-
 }
