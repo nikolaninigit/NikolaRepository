@@ -8,7 +8,7 @@ class SLLNode
 
    public: // Methods
 	   // default constructor
-	SLLNode() { next = NULL; }
+    	SLLNode() { next = NULL; }
           
    	SLLNode( t i ) // constructor with arguments
    	{
