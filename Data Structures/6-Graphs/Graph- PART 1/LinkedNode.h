@@ -13,7 +13,7 @@ class LinkedNode
 	 int distance;
 
     public:
-	    LinkedNode() // constructor
+	LinkedNode() // constructor
 	{
 	          next = NULL;
 	   adj = NULL;
