@@ -41,8 +41,8 @@ void main()
 
 	    	// adding two polynoms
  		 cout<<endl<<"SUM LOOKS"<<endl;
-	    s = r->add(obj , obj1);
-	    s->print();
+	    	s = r->add(obj , obj1);
+	    	s->print();
 	    	 cout<<endl;
 	////////
 
