@@ -37,7 +37,7 @@ class SLList
 	  t deleteFromHead(); // method for deleting head element of the list
 	  void addToTail(t elem); // method for adding new element to the end of the list
 	  t deleteFromTail(); // method for deleting elements from the end of the list
-      	void deleteElem(t el); // method that deletes element 'el' from the list
+      	  void deleteElem(t el); // method that deletes element 'el' from the list
 	  void insertNode( SLLNode<t> argumentNode ); // method for inserting new node into sorted list
 	  void bubbleSort(); // method for sorting list as bubble sort algorithm
 	  void removeNegatives(SLList<t> *rhs ); // method for getting nodes with negative 'info' values and puts them into second list
