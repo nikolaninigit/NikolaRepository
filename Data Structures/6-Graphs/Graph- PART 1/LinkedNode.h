@@ -7,7 +7,7 @@ class LinkedNode
 {
     public:
 	 t node; // info part of the Node
- 	  Edge<t , w> *adj; // pointer to the first in neighbours list
+ 	 Edge<t , w> *adj; // pointer to the first in neighbours list
 	 LinkedNode<t , w> *next; // pointer to the next node 
 	 int status; // very useful- may be used as various marker
 	 int distance;
