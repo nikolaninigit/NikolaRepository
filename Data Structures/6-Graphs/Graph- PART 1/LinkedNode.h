@@ -15,39 +15,38 @@ class LinkedNode
     public:
 	LinkedNode() // constructor
 	{
-	          next = NULL;
+	   next = NULL;
 	   adj = NULL;
 	   status = 0;
-	  
 	}
 	
 	LinkedNode(t n) // constructor with arguments
 	{
-		node = n;
-		adj = NULL;
-	next = NULL; 
-		status = 0;
+	   node = n;
+	   adj = NULL;
+	   next = NULL; 
+	   status = 0;
 	}
 	
 	LinkedNode( t n , Edge<t , w> *en ) // constructor with arguments
 	{
-		status = 0;
-		node = n;
-		adj = en;
-		next = NULL;
+	   status = 0;
+	   node = n;
+	   adj = en;
+           next = NULL;
 	}
 	
 	// constructor with arguments
 	LinkedNode(t n , Edge<t , w> *a , LinkedNode<t , w> * nn , int stat)
 	{
-		next = nn;
-		adj = a;
-		node = n;
-		status = stat;
+	   next = nn;
+	   adj = a;
+	   node = n;
+	   status = stat;
 	}
 	
 	void visit() // Method for printing Node
 	{
-		cout<<node<<" -> ";
+	   cout<<node<<" -> ";
 	}
 };
