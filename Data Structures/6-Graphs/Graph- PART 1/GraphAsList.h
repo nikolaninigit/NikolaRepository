@@ -35,7 +35,7 @@ class GraphAsList
 			return true;
 		}
 
-        LinkedNode<t , w> * findexNode(t el) // Method for findexing Node vith value el in the graph
+        	LinkedNode<t , w> * findexNode(t el) // Method for findexing Node vith value el in the graph
 		{	 
 		  LinkedNode<t , w> *ptr = start;
 		  while( ptr!= NULL && ptr->node!= el )
